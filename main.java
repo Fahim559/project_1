@@ -30,8 +30,11 @@ public class main {
         System.out.println("Email: " + user1.getEmail());
         System.out.println("Password: " + user1.getPassword());
 
-        String save_id = user1.getId();
-        String saved;
+        int save_id = user1.getId();
+        System.out.println("Password has been saved: " + save_id);
+
+
+        scanner.close();
 
         
 

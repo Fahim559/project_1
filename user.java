@@ -26,4 +26,13 @@ public class user {
     public String getPassword(){
         return passwordHash;
     }
+
+    public void setPassword(String password){
+        this.passwordHash = password;
+    }
+
+    public void setUsername(String username){
+        this.username = username;
+    }
+    
 }
