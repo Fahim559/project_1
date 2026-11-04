@@ -1,0 +1,40 @@
+
+import java.util.Scanner;
+
+public class main {
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter ID: ");
+        int id = scanner.nextInt();
+
+
+
+        System.out.print("Enter Username: ");
+        String username = scanner.next();
+
+        System.out.print("Enter Email: ");
+        String email = scanner.next();
+
+        System.out.print("Enter Password: ");
+        String password = scanner.next();
+
+
+
+
+        user user1 = new user(id, username, email, password);
+        System.out.println("ID: " + user1.getId());
+        System.out.println("Username: " + user1.getUsername());
+        System.out.println("Email: " + user1.getEmail());
+        System.out.println("Password: " + user1.getPassword());
+
+        String save_id = user1.getId();
+        String saved;
+
+        
+
+    }
+}
+
