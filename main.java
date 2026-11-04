@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class main {
 
 
-    public static void main(String[] args) {
+    public static void main() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter ID: ");
@@ -24,7 +24,7 @@ public class main {
 
 
 
-        user user1 = new user(id, username, email, password);
+        User user1 = new User(id, username, email, salt, passwordHash);        
         System.out.println("ID: " + user1.getId());
         System.out.println("Username: " + user1.getUsername());
         System.out.println("Email: " + user1.getEmail());
@@ -35,6 +35,9 @@ public class main {
 
 
         scanner.close();
+        
+
+        
 
         
 
