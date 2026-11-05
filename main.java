@@ -21,10 +21,13 @@ public class main {
         System.out.print("Enter Password: ");
         String password = scanner.next();
 
+        System.out.print("Enter Salt: ");
+        String salt = scanner.next();
 
 
 
-        User user1 = new User(id, username, email, salt, passwordHash);        
+
+        User user1 = new User(id, username, email, salt, password);        
         System.out.println("ID: " + user1.getId());
         System.out.println("Username: " + user1.getUsername());
         System.out.println("Email: " + user1.getEmail());
